@@ -2,8 +2,6 @@
 
 A compact 40 × 60 mm, 2-layer board with an ESP32-WROOM-32 and a Bosch BME280 for temperature, humidity and pressure. It runs from a 5 V input. Designed in KiCad 7.
 
-> **Status:** Rev A, design stage. The schematic and layout were generated with AI assistance as a learning project. I'm now reviewing and reworking the design (see [Roadmap](#roadmap)). Not yet manufactured.
-
 ![PCB layout](docs/images/pcb_layout.png)
 
 ## Schematic
