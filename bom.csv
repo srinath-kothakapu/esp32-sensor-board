@@ -1,0 +1,15 @@
+Ref,Value,Footprint,Qty,Note
+U1,ESP32-WROOM-32,RF_Module:ESP32-WROOM-32,1,Wi-Fi/Bluetooth module (antenna overhangs board edge)
+U2,AMS1117-3.3,Package_TO_SOT_SMD:SOT-223-3_TabPin2,1,3.3 V linear regulator
+U3,BME280,Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering,1,Temperature / humidity / pressure sensor (I2C 0x76)
+C1,10uF,Capacitor_SMD:C_0805_2012Metric,1,5 V input capacitor
+C2,22uF,Capacitor_SMD:C_1206_3216Metric,1,3.3 V output capacitor (use tantalum or low-ESR type with AMS1117)
+"C3 C5",100nF,Capacitor_SMD:C_0603_1608Metric,2,Decoupling (ESP32 and BME280)
+C4,1uF,Capacitor_SMD:C_0603_1608Metric,1,EN reset delay
+R1,10k,Resistor_SMD:R_0603_1608Metric,1,EN pull-up
+"R2 R3",4.7k,Resistor_SMD:R_0603_1608Metric,2,I2C pull-ups (SDA / SCL)
+R4,1k,Resistor_SMD:R_0603_1608Metric,1,LED current limit
+D1,GREEN,LED_SMD:LED_0603_1608Metric,1,Status LED on GPIO2
+"SW1 SW2",SPST push,Button_Switch_SMD:SW_SPST_B3U-1000P,2,RESET (EN) and BOOT (GPIO0)
+J1,5V IN,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,Power input (5 V / GND)
+J2,UART,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,1,GND / TXD / RXD for flashing

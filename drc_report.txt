@@ -1,0 +1,10 @@
+KiCad 7.0.11 design rule check (pcbnew Python API), board: esp32-sensor-board.kicad_pcb
+Rules: 0.2 mm clearance, 0.2 mm min track, 0.3 mm min drill (vias), 0.2 mm min through drill (ESP32 ground pad vias)
+
+Errors:   0   (no clearance, short, unconnected or keepout violations)
+Warnings: 19
+  - 17 x "library not configured" (footprints are embedded in the board file, no library table is set up)
+  - 2  x "silkscreen clipped by board edge" (intentional: the ESP32 module outline overhangs the top edge so the antenna sits outside the PCB)
+
+Netlist check: schematic netlist (exported with kicad-cli) vs PCB pad nets: 52 of 52 pad connections identical.
+Note: KiCad 7 has no ERC/DRC command line, so the electrical rules check of the schematic was not run in the GUI.
